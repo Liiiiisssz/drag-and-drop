@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 200px;
+    display: block;
+}
+
+.header{
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 4rem;
+    background: rgb(167, 190, 255);
+}
+
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+}
+
+h2{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.img-section, .fav-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5%;
+}
+
+.dropzone{
+    padding: 5%;
+}
