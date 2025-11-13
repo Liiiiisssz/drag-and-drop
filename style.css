@@ -1,18 +1,48 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat';
+}
+
+h1{
+    font-family: 'Concert One';
+    color: #ecb2b0;
+}
+
+#icon{
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    object-fit:contain;
 }
 
 img{
-    max-width: 200px;
+    width: 200px;
+    height: 200px;
     display: block;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 .header{
-    text-align: center;
-    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 4rem;
-    background: rgb(167, 190, 255);
+    padding: 2rem 0;
+}
+
+.header-inner{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.header p{
+    width: 200px;
+    text-align: right;
+    color: #dd8d8a;
 }
 
 .container{
@@ -31,16 +61,50 @@ h2{
     padding-bottom: 2rem;
 }
 
-.img-section, .fav-section {
+.favoritos h2, .favoritos p{
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.img-section{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-    border: 1px solid black;
+    border: 1px solid #ecb2b0;
     border-radius: 20px;
     padding: 5%;
 }
 
 .dropzone{
     padding: 5%;
+    gap: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    flex-wrap: wrap;         
+    min-height: 200px;       
+    border: 2px dashed #999; 
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.dropzone.over{
+    color: #000;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #cd7a7e81;
+}
+
+.dropzone.possible-drop {
+    border-color: #ecb2b0;
+    background-color: #ecb2b038;
+}
+
+.footer{
+    padding: 2.5rem 0;
+    margin-top: 7rem;
+    background: #ecb2b0;
+    color: white;
+    text-align: center;
 }
